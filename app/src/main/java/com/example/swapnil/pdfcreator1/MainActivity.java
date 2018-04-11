@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 GMailSender sender = new GMailSender(
                                         "swapniljethwa22@gmail.com",
-                                        "suramya22");
+                                        "**ENTER PASSWORD*****");
                                 sender.addAttachment(Environment.getExternalStorageDirectory().getPath() + "/IEEE-Ifest/"+edit.getText().toString()+ ".pdf");
                                 sender.sendMail(sub, mess,
                                         "swapniljethwa22@gmail.com",
