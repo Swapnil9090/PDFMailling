@@ -1,5 +1,4 @@
 package com.example.swapnil.pdfcreator1;
-import android.app.Activity;
 
 import javax.activation.DataHandler;
 
@@ -160,7 +159,7 @@ public class GMailSender extends javax.mail.Authenticator {
 
 
 
-    public void addAttachment(String filename) throws Exception {
+    public void addAttachment(String filename,int regno) throws Exception {
 
         BodyPart messageBodyPart = new MimeBodyPart();
 
@@ -168,10 +167,7 @@ public class GMailSender extends javax.mail.Authenticator {
 
         messageBodyPart.setDataHandler(new DataHandler(source));
 
-        messageBodyPart.setFileName("IEEE-IFEST REGISTRATION.pdf");
-
-
-
+        messageBodyPart.setFileName("Ifest-Registration_"+regno+".pdf");
         _multipart.addBodyPart(messageBodyPart);
 
     }
